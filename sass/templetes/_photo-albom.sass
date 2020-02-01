@@ -1,0 +1,12 @@
+.photo-albom
+  &__image
+    width: 100%
+    transition: filter .3s ease-in-out
+    filter: grayscale(99%) 
+    &:hover
+      filter: grayscale(0%) 
+
+@media screen and (max-width: 992px)
+  .photo-albom
+    &__content
+      display: none

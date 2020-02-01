@@ -1,0 +1,56 @@
+.about-us
+  &__content
+    min-height: 42.867rem
+    padding-bottom: 2rem
+    padding-top: 2.3rem
+  &__text
+    line-height: 1.4rem
+    margin-top: -0.7rem
+  &__span-text
+    font-family: 'Roboto-Regular'
+    line-height: 1.4rem
+    padding: 0.8rem 0 1.5rem 0
+  &__slider
+    height: auto
+    background: url('../images/about-bg.jpg') no-repeat 
+    background-position: 100% 55%
+    background-size: 100%
+    &__video
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-top: 2rem
+      margin-left: auto
+      margin-right: 0
+      margin-bottom: 2rem
+      width: 61%
+.swiper
+  &-container
+    &--about-us
+      width: 28.667rem
+      //height: auto
+      padding-top: 1.5rem
+      margin: auto
+.swiper
+  &-control
+    &-wrapper
+      &--about-us
+        top: 0
+
+@media screen and (max-width: 909px)
+  .about-us
+    &__slider
+      height: auto
+      background-image: none
+    // &__content
+    //   //padding-bottom: 2rem
+    // &__text
+    //   text-align: center
+  .swiper
+    &-container
+      &--about-us
+        width: 100%
+        margin: auto
+
+
+

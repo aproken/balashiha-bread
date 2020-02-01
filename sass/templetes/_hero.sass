@@ -1,0 +1,151 @@
+.hero
+  min-height: 38.4rem
+  background: url('../images/wrap-bg.jpg') no-repeat
+  background-position: center 63%
+  background-size: 90rem
+  &__tagline
+    margin-top: 8.3rem
+  &__title, 
+  &__text
+    font-family: 'Roboto-Condensed'
+    text-transform: uppercase
+    text-align: center
+  &__title
+    font-size: 3.067rem
+    letter-spacing: 0.09rem
+    color: $brown
+    padding-bottom: 0.5rem
+  &__text
+    font-size: 1.56rem
+  &__wrap
+    //height: 
+    display: flex
+    justify-content: space-between 
+    align-items: flex-end 
+    margin-top: 3.3rem    
+  &__conditions
+    display: flex
+    justify-content: space-between
+    width: 46rem
+  &__dialog
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 20rem
+    background-color: $red
+    border: 6px solid $peach
+    position: relative;
+  &__form
+    margin-top: 1.867rem
+    width: 87%
+.sticker
+  &__content
+    display: flex
+    justify-content: space-around
+    align-items: center
+    min-height: 13rem
+    min-width: 13rem
+    background: url('../images/hero-sticker.svg') no-repeat
+    background-size: cover
+    margin-right: 2rem
+  &__text
+    max-width: 9.5rem
+    font-family: 'Roboto-Condensed'
+    font-size: 1rem
+    text-transform: uppercase
+    text-align: center
+    letter-spacing: 0.02rem
+.dialog
+  &__title,
+  &__title--smaller
+    text-transform: uppercase
+    color: $peach
+    text-align: center
+    font-family: 'Roboto Condensed', sans-serif
+    font-weight: 300
+    letter-spacing: 0.03rem
+  &__title
+    font-size: 1.4rem
+    padding-top: 1.53rem
+    &--smaller
+      font-size: 1.2rem
+  &__text
+    color: $light
+    width: 77%
+    font-size: 0.733rem
+    line-height: 0.833rem
+    font-weight: 300
+    text-align: center
+    padding: 0rem
+  &__policy
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 1rem
+    margin-bottom: 1rem
+   
+    
+@media screen and (max-width: 1380px)
+  .hero
+    background-size: 96%
+@media screen and (max-width: 1260px)
+  .brand
+    &__text
+      padding-left: 10.5rem
+@media screen and (max-width: 1013px)
+  .dialog
+    &__text
+      font-size: 0.65rem
+      line-height: 0.7rem
+@media screen and (max-width: 992px)
+  .hero
+    &__conditions
+      flex-basis: 64%
+  .sticker
+    &__content
+      min-width: 11rem
+      min-height: 11rem
+    &__text
+      max-width: 8rem
+      font-size: 0.8rem
+@media screen and (max-width: 954px)
+  .hero
+    &__text 
+      font-size: 1.367rem
+@media screen and (max-width: 874px)
+  .hero
+    &__wrap
+      margin-top: 2.4rem
+    &__conditions
+      display: none
+    &__dialog
+      flex-basis: 70%
+      margin: auto
+    &__title
+      font-size: 2.667rem
+  .dialog
+    &__text
+      font-size: 0.9rem
+      line-height: 0.9rem
+@media screen and (max-width: 688px)
+  .brand
+    &__title
+      display: none 
+    &__subtitle
+      display: none 
+    &__image
+      top: -2.9rem
+  .hero
+    &__tagline
+      margin-top: 9.3rem
+@media screen and (max-width: 590px)
+  .hero
+    background-image: none
+    &__dialog
+      flex-basis: 100%
+      margin: auto
+@media screen and (max-width: 529px)
+  .hero
+    &__title
+      font-size: 2.067rem
+        

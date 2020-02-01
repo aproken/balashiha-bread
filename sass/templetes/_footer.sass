@@ -1,0 +1,60 @@
+.footer
+  &__map
+    width: 100%
+    min-height: 37.33rem
+    position: relative
+  &__sticker
+    &-map
+      background-color: $light
+      color: $dark
+      display: flex
+      align-items: center
+      padding-top: 1rem
+      padding-bottom: 1rem
+  &__copiright
+    color: $light
+    // padding-top: 3rem
+    text-align: center
+.sticker-map
+  &__title
+    font-family: 'Roboto-Regular'
+    font-size: 1.067rem
+    text-transform: uppercase
+  &__text
+    font-size: 1.067rem
+    padding-top: 0.5rem
+  &__link
+    text-decoration: none
+    color: $dark
+    &--red
+      color: $red
+    &:hover
+      cursor: pointer
+.map-text-group
+  padding-left: 1rem
+.copiright
+  padding-top: 2rem
+  &__text
+    padding-bottom: 0.5rem
+  &__social
+    display: flex
+    justify-content: center
+    align-items: center
+    padding-top: 1.5rem
+    padding-bottom: 3rem
+    &:hover
+      cursor: pointer
+.count
+  padding-top: 0.3rem
+  margin-right: 1.5rem
+  width: 2.667rem
+  height: 1.733rem
+  color: $dark
+  background: url('../images/count-bg.svg') no-repeat center
+
+#map_mark
+  position: absolute
+  top: 22%
+  left:  calc((100% - 170px) / 2)
+  z-index: 1
+  width: 200px

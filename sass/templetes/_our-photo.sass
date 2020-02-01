@@ -1,0 +1,97 @@
+.our-photo
+  min-height: 23.8rem
+  background: $milk url('../images/our-photo-bg.jpg') no-repeat
+  background-position: center center
+  background-size: contain
+  &__content
+    padding-top: 3.333rem
+  &__text
+    font-size: 'Roboto-Light'
+    font-size: 1.067rem
+    line-height: 1.553rem
+    font-weight: 300
+    padding-bottom: 1.4rem
+.col
+  &--slider-our-photo
+    width: 57%
+  &--text-our-photo
+    width: 39%
+.swiper
+  &-slide
+    &__image 
+      border: 5px solid $light
+  &-control-wrapper
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: space-between
+    z-index: 1
+    margin: auto
+    top: -3.5rem
+    width: 7.467rem
+    height: 1.667rem
+    border-radius: 0.267rem
+    background-color: rgba($black, 0.4)
+  &-pagination,
+  &-button
+    &-prev, 
+    &-next
+      outline: none
+  &-button
+    &-prev, 
+    &-next
+      width: 1.667rem
+      height: 1.667rem
+      top: 1.5rem
+      &::after
+        display: none
+    &-prev
+      background: url('../images/arrow-prev.svg') no-repeat center
+      left: 0
+    &-next
+      background: url('../images/arrow-next.svg') no-repeat center
+      right: -0.067rem
+  &-pagination,
+  &-bullets
+    left: 0
+  &-pagination
+    margin-left: auto
+    margin-right: auto
+    right: 0
+    &-bullet 
+      width: 0.6rem
+      height: 0.6rem
+      border-radius: 0
+      background: $light
+      margin: 0.03rem 0.2rem
+      opacity: 1
+      &-active
+        background: $red
+
+@media screen and (max-width: 1260px)
+  .swiper
+    &-button
+      &-prev,
+      &-next
+        top: 1.7rem
+@media screen and (max-width: 1110px)
+  .our-photo
+    background-color: $milk
+    background-image: none
+@media screen and (max-width: 909px)
+  .col
+    &--slider-our-photo
+      width: 100%
+  .col
+    &--text-our-photo
+      width: 100%
+      text-align: center
+  .swiper
+    &-slide
+      &__image
+        width: 100%
+@media screen and (max-width: 440px)
+  .section
+    &-title
+      &__text
+        font-size: 1.9rem

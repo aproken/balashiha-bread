@@ -1,0 +1,63 @@
+.main-advantages
+  min-height: 39.267rem
+  height: auto
+  background-repeat:  no-repeat
+  background-image: url('../images/advantages-bg-1.jpg'), url('../images/advantages-bg-2.jpg')
+  background-position: left center, right bottom
+  background-size: contain
+  &__content
+    padding-top: 3.53rem
+  &__video
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 2rem
+    margin-left: auto
+    margin-right: 0
+    margin-bottom: 2rem
+    width: 61%
+    // height: auto
+    // background-image: url('../images/video-image.jpg')
+    // background-repeat: no-repeat
+    // background-position: center
+    // background-size: 100%
+  &__image
+    &:hover
+      cursor: pointer
+
+@media screen and (min-width: 1260px)
+  .main-advantages
+    background-repeat:  no-repeat
+    background-image: url('../images/advantages-bg.jpg')
+    background-position: center bottom
+    background-size: contain
+    &__video
+      width: 64%
+      //min-height: 27rem
+@media screen and (max-width: 909px)
+  .main-advantages
+    background-image: none
+    &__video
+      margin-left: 0
+      margin-right: 0
+      width: 100%
+      //min-height: 39rem
+    &__image
+      width: 100%
+@media screen and (max-width: 575px)
+  .main-advantages
+    min-height: 15.66rem
+    &__video
+      margin-left: 0
+      margin-right: 0
+      width: 100%
+    //  min-height: 14.66rem
+@media screen and (max-width: 411px)
+  .main-advantages
+    &__video
+      min-height: 17.66rem
+@media screen and (max-width: 375px)
+  .main-advantages
+    &__video
+      //min-height: 15.66rem
+

@@ -1,0 +1,29 @@
+.container
+  width: 88%
+  max-width: 67.4rem
+  margin: auto
+.row
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+.col-50
+  width: 48%
+.col-30
+  width: 30%
+.col-20
+  width: 16.66%
+  padding: 0
+  margin: 0
+@media screen and (max-width: 890px)
+  .col-30
+    width: 43%
+@media screen and (max-width: 840px)
+  .row
+    &--our-advantages
+      flex-direction: column
+  .col-50
+    width: 100%
+@media screen and (max-width: 710px)
+  .col-30
+    width: 100%

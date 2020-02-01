@@ -1,0 +1,48 @@
+*, *:before, *:after
+  box-sizing: border-box
+html
+  font-size: 15px
+body
+  font-family: 'Roboto-Light', Sans-serif
+  font-size: 1rem
+img
+  max-width: 100%
+p,
+h1,
+h2,
+h4
+  margin: 0
+  padding: 0
+.section
+  &--light
+    background-color: $light
+    color: $dark
+  &--dark
+    background-color: $dark
+  &--milk
+    background-color: $milk
+    color: $text
+  &--orange
+    background: #e59146 url('../images/form-bg.png') repeat
+    min-height: 21.133rem
+    color: $light
+  &-title
+    display: flex
+    justify-content: center
+    flex-direction: column
+    margin-bottom: 1.2rem
+    &__text
+      font-size: 2.133rem
+      font-family: 'Roboto Condensed', sans-serif
+      text-align: center
+      text-transform: uppercase
+      padding-bottom: 0.2rem
+      &--main-advantages
+        font-size: 2.09rem
+      &--about-us
+        padding-bottom: 0.5rem
+
+@media screen and (max-width: 996px)
+  .section
+    &--empty
+      display: none
